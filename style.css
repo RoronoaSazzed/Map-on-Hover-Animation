@@ -1,0 +1,827 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parentDiv {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Iceland */
+
+#iceland-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#iceland:hover #iceland-map {
+  transform: scale(1.2);
+  fill: transparent;
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#iceland:hover #iceland-country path {
+  fill: transparent;
+}
+
+/* France - Multi Map */
+
+#france-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#france:hover #france-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#france-map path {
+  transition: 0.25s;
+}
+
+#france:hover #france-map path {
+  fill: transparent;
+}
+
+#france:hover #france-country path {
+  fill: transparent;
+}
+
+/* Bosnia */
+
+#bosnia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#bosnia:hover #bosnia-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#bosnia:hover #bosnia-country path {
+  fill: transparent;
+}
+
+/* spain - Multi Map*/
+
+#spain-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#spain:hover #spain-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#spain-map path {
+  transition: 0.25s;
+}
+
+#spain:hover #spain-map path {
+  fill: transparent;
+}
+
+#spain:hover #spain-country path {
+  fill: transparent;
+}
+
+/* portugal */
+
+#portugal-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#portugal:hover #portugal-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#portugal:hover #portugal-country path {
+  fill: transparent;
+}
+
+/* montenegro */
+
+#montenegro-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#montenegro:hover #montenegro-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#montenegro:hover #montenegro-country path {
+  fill: transparent;
+}
+
+/* italy - Multi Map*/
+
+#italy-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#italy:hover #italy-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#italy-map path {
+  transition: 0.25s;
+}
+
+#italy:hover #italy-map path {
+  fill: transparent;
+}
+
+#italy:hover #italy-country path {
+  fill: transparent;
+}
+
+/* switzerland */
+
+#switzerland-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#switzerland:hover #switzerland-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#switzerland:hover #switzerland-country path {
+  fill: transparent;
+}
+
+/* austria */
+
+#austria-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#austria:hover #austria-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#austria:hover #austria-country path {
+  fill: transparent;
+}
+
+/* lituania */
+
+#lituania-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#lituania:hover #lituania-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#lituania:hover #lituania-country path {
+  fill: transparent;
+}
+
+/* slovenia */
+
+#slovenia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#slovenia:hover #slovenia-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#slovenia:hover #slovenia-country path {
+  fill: transparent;
+}
+
+/* greece - Multi Map*/
+
+#greece-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#greece:hover #greece-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#greece-map path {
+  transition: 0.25s;
+}
+
+#greece:hover #greece-map path {
+  fill: transparent;
+}
+
+#greece:hover #greece-country path {
+  fill: transparent;
+}
+
+/* croatia */
+
+#croatia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#croatia:hover #croatia-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#croatia:hover #croatia-country path {
+  fill: transparent;
+}
+
+/* ukraine - Multi Map*/
+
+#ukraine-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#ukraine:hover #ukraine-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#ukraine-map path {
+  transition: 0.25s;
+}
+
+#ukraine:hover #ukraine-map path {
+  fill: transparent;
+}
+
+#ukraine:hover #ukraine-country path {
+  fill: transparent;
+}
+
+/* bulgaria */
+
+#bulgaria-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#bulgaria:hover #bulgaria-map {
+  fill: transparent;
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#bulgaria:hover #bulgaria-country path {
+  fill: transparent;
+}
+
+/* romania */
+
+#romania-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#romania:hover #romania-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#romania:hover #romania-country path {
+  fill: transparent;
+}
+
+/* poland */
+
+#poland-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#poland:hover #poland-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#poland:hover #poland-country path {
+  fill: transparent;
+}
+
+/* serbia */
+
+#serbia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#serbia:hover #serbia-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#serbia:hover #serbia-country path {
+  fill: transparent;
+}
+
+/* estonia - Multi Map*/
+
+#estonia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#estonia:hover #estonia-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#estonia-map path {
+  transition: 0.25s;
+}
+
+#estonia:hover #estonia-map path {
+  fill: transparent;
+}
+
+#estonia:hover #estonia-country path {
+  fill: transparent;
+}
+
+/* albenia */
+
+#albenia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#albenia:hover #albenia-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#albenia:hover #albenia-country path {
+  fill: transparent;
+}
+
+/* denmark - Multi Map*/
+
+#denmark-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#denmark:hover #denmark-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#denmark-map path {
+  transition: 0.25s;
+}
+
+#denmark:hover #denmark-map path {
+  fill: transparent;
+}
+
+#denmark:hover #denmark-country path {
+  fill: transparent;
+}
+
+/* germany */
+
+#germany-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#germany:hover #germany-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#germany:hover #germany-country path {
+  fill: transparent;
+}
+
+/* ireland */
+
+#ireland-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#ireland:hover #ireland-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#ireland:hover #ireland-country path {
+  fill: transparent;
+}
+
+/* belgium */
+
+#belgium-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#belgium:hover #belgium-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#belgium:hover #belgium-country path {
+  fill: transparent;
+}
+
+/* norway */
+
+#norway-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#norway:hover #norway-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#norway:hover #norway-country path {
+  fill: transparent;
+}
+
+/* czech */
+
+#czech-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#czech:hover #czech-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#czech:hover #czech-country path {
+  fill: transparent;
+}
+
+/* cyprus */
+
+#cyprus-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#cyprus:hover #cyprus-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#cyprus:hover #cyprus-country path {
+  fill: transparent;
+}
+
+/* latvia */
+
+#latvia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#latvia:hover #latvia-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#latvia:hover #latvia-country path {
+  fill: transparent;
+}
+
+/* finland */
+
+#finland-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#finland:hover #finland-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#finland:hover #finland-country path {
+  fill: transparent;
+}
+
+/* slovakia */
+
+#slovakia-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#slovakia:hover #slovakia-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#slovakia:hover #slovakia-country path {
+  fill: transparent;
+}
+
+/* hungary */
+
+#hungary-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#hungary:hover #hungary-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#hungary:hover #hungary-country path {
+  fill: transparent;
+}
+
+/* uk - Multi Map*/
+
+#uk-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#uk:hover #uk-map {
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#uk-map path {
+  transition: 0.25s;
+}
+
+#uk:hover #uk-map path {
+  fill: transparent;
+}
+
+#uk:hover #uk-country path {
+  fill: transparent;
+}
+
+/* malta - Multi Map*/
+
+#malta-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#malta:hover #malta-map {
+  transform: scale(1.5);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#malta-map path {
+  transition: 0.25s;
+}
+
+#malta:hover #malta-map path {
+  fill: transparent;
+}
+
+#malta:hover #malta-country path {
+  fill: transparent;
+}
+
+/* luxembourg */
+
+#luxembourg-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#luxembourg:hover #luxembourg-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#luxembourg:hover #luxembourg-country path {
+  fill: transparent;
+}
+
+/* netherlands */
+
+#netherlands-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#netherlands:hover #netherlands-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#netherlands:hover #netherlands-country path {
+  fill: transparent;
+}
+
+/* andorra */
+
+#andorra-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#andorra:hover #andorra-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#andorra:hover #andorra-country path {
+  fill: transparent;
+}
+
+/* monaco */
+
+#monaco-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#monaco:hover #monaco-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#monaco:hover #monaco-country path {
+  fill: transparent;
+}
+
+/* liechtenstein */
+
+#liechtenstein-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#liechtenstein:hover #liechtenstein-map {
+  fill: transparent;
+  transform: scale(1.1);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#liechtenstein:hover #liechtenstein-country path {
+  fill: transparent;
+}
+
+/* sweden - Multi Map*/
+
+#sweden-map {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: 0.25s;
+}
+
+#sweden:hover #sweden-map {
+  transform: scale(1.2);
+  stroke-width: 1px;
+  stroke: white;
+}
+
+#sweden-map path {
+  transition: 0.25s;
+}
+
+#sweden:hover #sweden-map path {
+  fill: transparent;
+}
+
+#sweden:hover #sweden-country path {
+  fill: transparent;
+}
